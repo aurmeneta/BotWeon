@@ -36,7 +36,7 @@ client.on("messageCreate", async (message) => {
 
     // Responder Mensaje
     const cantidad_respuestas = config.replies.length
-    const respuesta = config.replies[usuario.count % cantidad_respuestas]
+    const respuesta = config.replies[(usuario.count - 1) % cantidad_respuestas]
     message.reply(respuesta)
 })
 
