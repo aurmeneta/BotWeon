@@ -33,6 +33,10 @@ client.on("messageCreate", async (message) => {
     const usuario = await db.buscarUsuario(uid)
     usuario.count++
     await db.actualizarUsuario(usuario)
-    console.log(usuario)
+
+    // Responder Mensaje
+    const cantidad_respuestas = config.replies.length
+    const respuesta = config.replies[usuario.count % cantidad_respuestas]
+    message.reply(respuesta)
 })
 
