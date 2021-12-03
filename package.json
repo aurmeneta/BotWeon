@@ -1,0 +1,21 @@
+{
+  "name": "botweon",
+  "version": "1.0.0",
+  "description": "Bot para putear a los weones del server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aweonaos",
+    "weon",
+    "bot",
+    "discord"
+  ],
+  "author": "Andrés Urmeneta Betzhold",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0"
+  }
+}
