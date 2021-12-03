@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Bot DB",
+            "database": "${workspaceFolder:BotWeon}/db.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

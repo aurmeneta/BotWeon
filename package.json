@@ -4,7 +4,10 @@
   "description": "Bot para putear a los weones del server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "keywords": [
     "aweonaos",
@@ -16,6 +19,12 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^13.3.1",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "nodemon": "^2.0.15"
   }
 }
