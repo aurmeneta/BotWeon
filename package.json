@@ -1,6 +1,6 @@
 {
   "name": "botweon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bot para putear a los weones del server",
   "main": "index.js",
   "scripts": {
