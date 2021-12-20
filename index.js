@@ -30,9 +30,10 @@ client.on("messageCreate", async (message) => {
 
     // Actualizar count del usuario
     const { id: uid } = message.author
-    const usuario = await db.buscarUsuario(uid)
+    const server_id = message.guild.id
+    const usuario = await db.buscarUsuario(uid, server_id)
     usuario.count++
-    await db.actualizarUsuario(usuario)
+    await db.actualizarUsuario(usuario, server_id)
 
     // Responder Mensaje
     const cantidad_respuestas = config.replies.length
